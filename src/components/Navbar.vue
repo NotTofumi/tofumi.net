@@ -8,37 +8,46 @@
     <div class="navbar">
     <div class="dropdown">
         Fortbildungen
-        <div class="dropdown-contents">
-
+        <div class="dropdown-content">
+            <a href="">Betreuung</a>
+            <a href="">Pflege</a>
+            <a href="">PraxisAnleitung</a>
         </div>
     </div>
     
 
     <div class="dropdown">
         Kurse
-        <div class="dropdown-contents">
-
+        <div class="dropdown-content">
+            <a href="">Führung</a>
+            <a href="">Studierende</a>
+            <a href="">Pflegende</a>
         </div>
     </div>
 
     <div class="dropdown">
         Weiterbildungen
-        <div class="dropdown-contents">
-
+        <div class="dropdown-content">
+            <a href="">Betreungskraft</a>
+            <a href="">Pflegehelfter</a>
         </div>
     </div>
 
     <div class="dropdown">
         Weitere Leistungen
-        <div class="dropdown-contents">
-
+        <div class="dropdown-content">
+            <a href="">Arbeitsorganisation</a>
+            <a href="">Betreibliches Gesundheitsmanagement</a>
         </div>
     </div>
+
+    <button class="elopage">
+            Kurse Auswählen
+    </button>
+
     </div>
 
-        <button class="elopage">
-            Kurse Auswählen
-        </button>
+
 
 </nav>
 
@@ -56,7 +65,6 @@ nav{
 
 .navbar{
     margin-left: auto;
-    margin-right: auto;
 }
 
 .fortbildung{
@@ -68,7 +76,7 @@ nav{
 .elopage{
     font-size: 95%;
     margin-top: 1%;
-    margin-right: 10rem;
+    margin-right: 5%;
     float: right;
     padding: 1%;
     padding-left: 3%;
@@ -80,6 +88,7 @@ nav{
 }
 
 .dropdown{
+    position: relative;
     font-weight: bold;
     text-align: center;
     float: left;
@@ -88,6 +97,34 @@ nav{
     padding-right: 3%;
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    position: absolute;
+    min-width: 5%;
+    padding: 1%;
+    z-index: 1;
+    border-radius: 0px 16px 16px 16px;
+} 
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 16px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: rgba(128, 128, 128, 0.219);
 }
 
 .logo{
