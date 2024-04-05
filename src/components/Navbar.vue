@@ -87,6 +87,10 @@ nav{
     color: black;
 }
 
+.elopage:hover{
+    background-color: rgb(235, 235, 235);
+}
+
 .dropdown{
     position: relative;
     font-weight: bold;
