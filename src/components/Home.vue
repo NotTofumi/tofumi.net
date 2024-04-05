@@ -61,7 +61,6 @@
   .foo{
     width: 30rem;
     border-radius: 40px;
-    margin-right: -5rem;
   }
 
   .name{
@@ -78,6 +77,7 @@
     width: 100%;
     background-color: white;
     color: black;
+    padding: 1%;
   }
 
 </style>
