@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/Home.vue'
 import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -9,7 +8,6 @@ import Footer from './components/Footer.vue'
     
   <Navbar/>
   <HelloWorld/>
-  <Footer/>
   </body>
 </template>
 
