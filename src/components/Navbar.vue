@@ -57,6 +57,14 @@
 <style>
 
 
+:root{
+    --background-color: white;
+    --primary-color: ;
+    --secondary-color: ;
+    --highilit-color: ;
+}
+
+
 nav{
     width: 100%;
     font-size: 130%;
