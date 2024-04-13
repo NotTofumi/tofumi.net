@@ -1,5 +1,35 @@
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closenav(){
+    
+}
+
+</script>
+
 <template>
-<nav>
+
+<nav class="mobile">
+
+    <div class="mobile-navbar">
+        
+
+        <img class="logo-mobile" src="/src/assets/logo-inverted.png" alt="">
+        <fa class="mobile-menu" onclick="openNav()" icon="bars" size="lg"/>
+    </div>
+
+
+    <div class="sidenav">
+        <a href=""></a>
+    </div>
+
+
+</nav>
+
+<nav class="desktop">
     
     <a class="logo-container" href="">
     <img class="logo" src="../assets/logo.png">
@@ -17,7 +47,7 @@
     
 
     <div class="dropdown">
-        Kurse
+       Unsere Kurse
         <div class="dropdown-content">
             <a href="">Führung</a>
             <a href="">Studierende</a>
@@ -56,6 +86,35 @@
 
 <style>
 
+@media (max-width: 480px){
+    .desktop  {
+        display: none;
+    }
+    .mobile{
+        height: 3%;
+        justify-content: center;
+        justify-items: center
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .desktop  {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .desktop  {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .mobile{
+        display: none;
+    }
+}
 
 :root{
     --background-color: white;
@@ -65,7 +124,56 @@
 }
 
 
-nav{
+.mobile{
+    background-color: white;
+    color: black;
+    width: 100%;
+    position: fixed;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+}
+
+.sidenav{
+    background-color: white;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a{
+    color: black;
+
+}
+
+.mobile-navbar{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.mobile-menu{
+    color: black;
+    float: right;
+    margin-top: 1.25%;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logo-mobile{
+    width: 150px;
+    float: left;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.desktop{
     width: 100%;
     font-size: 130%;
     background-color: rgba(0, 0, 0, 0.281);
