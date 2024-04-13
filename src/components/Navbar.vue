@@ -1,11 +1,16 @@
 <script>
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+export default {
+    setup() {
 
-function closenav(){
-    
+        function openNav(){
+            document.getElementById("sidenav").style.width = "250px"
+        }
+
+        return{
+            openNav
+        }
+    }
 }
 
 </script>
@@ -18,12 +23,27 @@ function closenav(){
         
 
         <img class="logo-mobile" src="/src/assets/logo-inverted.png" alt="">
-        <fa class="mobile-menu" onclick="openNav()" icon="bars" size="lg"/>
+
+        <div @click="openNav">
+        <fa class="mobile-menu"icon="bars" size="lg"/>
+        </div>
     </div>
 
 
-    <div class="sidenav">
-        <a href=""></a>
+    <div id="sidenav" class="sidenav">
+        <button>
+        Fortbildungen
+        </button>
+        <button>
+            Kurse
+        </button>
+        <button>
+            Weiterbildungen
+        </button>
+        <button>
+            Weitere Leistungen
+        </button>
+
     </div>
 
 
@@ -144,11 +164,19 @@ function closenav(){
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    width: 0px;
 }
 
 .sidenav a{
     color: black;
+}
 
+.sidenav button{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: large;
 }
 
 .mobile-navbar{
