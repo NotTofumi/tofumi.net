@@ -7,8 +7,13 @@ export default {
             document.getElementById("sidenav").style.width = "250px"
         }
 
+        function closeNav(){
+            document.getElementById("sidenav").style.width = "0px"
+        }
+
         return{
-            openNav
+            openNav,
+            closeNav
         }
     }
 }
@@ -31,6 +36,9 @@ export default {
 
 
     <div id="sidenav" class="sidenav">
+        <div @click="closeNav">
+            <fa class="sidenav-close" size="xl" icon="fa-solid fa-chevron-right"/>
+        </div>
         <button>
         Fortbildungen
         </button>
@@ -134,6 +142,48 @@ export default {
     .mobile{
         display: none;
     }
+
+}
+
+@media (min-width: 1026px) and (max-width: 1919px) {
+    .elopage {
+        font-size: 80%;
+        padding: 1%;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+    .dropdown{
+        font-size: 80%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .logo{
+        padding-right: 2rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .elopage{
+        padding: 1%;
+        font-size: 100%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        margin-right: 4%;
+        margin-top: 1.5%;
+    }
+
+    .dropdown{
+        font-size: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .logo{
+        padding-right: 6rem;
+    }
+    
 }
 
 :root{
@@ -160,10 +210,10 @@ export default {
     position: fixed;
     z-index: 2;
     top: 0;
-    left: 0;
+    right: 0;
     overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+    padding-top: 50px;
+    transition: 0.25s;
     width: 0px;
 }
 
@@ -171,9 +221,17 @@ export default {
     color: black;
 }
 
+.sidenav-close{
+    color: gray;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
 .sidenav button{
     width: 100%;
     border: none;
+    padding-top: 7%;
+    padding-bottom: 7%;
     background-color: transparent;
     color: black;
     font-size: large;
@@ -218,13 +276,8 @@ export default {
 }
 
 .elopage{
-    font-size: 95%;
-    margin-top: 1%;
-    margin-right: 5%;
+    font-weight: bold;
     float: right;
-    padding: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
     border: none;
     border-radius: 100px;
     background-color: white;
@@ -240,7 +293,6 @@ export default {
     font-weight: bold;
     text-align: center;
     float: left;
-    font-size: 100%;
     padding-left: 3%;
     padding-right: 3%;
     padding-top: 2%;
@@ -276,7 +328,6 @@ export default {
 }
 
 .logo{
-    padding-right: 6rem;
     margin-top: 1%;
     float: left;
     width: 18%;
