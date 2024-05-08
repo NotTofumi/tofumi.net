@@ -40,6 +40,26 @@
 
 <style scoped>
 
+  @media (max-width: 1024) {
+    .fortbildung{
+      padding-top: 8%;
+    }
+
+    .text{
+      max-width: 10rem;
+    }
+    
+
+  }
+
+  @media (min-width: 1025) and  (max-width: 1920) {
+    .fortbildung{
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+  }
+
+
   p{
     max-width: 30rem;
   }
@@ -65,6 +85,7 @@
 
   .name{
     width: 100%;
+    margin-top: 0%;
   }
 
   .fortbildung{
@@ -79,6 +100,9 @@
     width: 100%;
     background-color: white;
     color: black;
+    padding-bottom: 2rem;
   }
+ 
+
 
 </style>

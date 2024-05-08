@@ -280,7 +280,7 @@ export default {
     float: right;
     border: none;
     border-radius: 100px;
-    background-color: white;
+    background-color: #E9A537;
     color: black;
 }
 
