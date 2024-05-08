@@ -7,7 +7,7 @@
 
 <div class="content">
 
-  <img class="name" src="../assets/image2.webp">
+  <img class="name" src="../assets/images/main.jpg">
 
 <div class="page">
 
@@ -71,13 +71,14 @@
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    padding-top: 5%;
+    padding-bottom: 3%;
   }
 
   .content{
     width: 100%;
     background-color: white;
     color: black;
-    padding: 1%;
   }
 
 </style>
