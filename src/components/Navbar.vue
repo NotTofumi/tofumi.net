@@ -39,16 +39,22 @@ export default {
         <div @click="closeNav">
             <fa class="sidenav-close" size="xl" icon="fa-solid fa-chevron-right"/>
         </div>
-        <button>
+
+        <div style="text-align: center; padding-bottom: 15%;">
+            <button class="elopage-mobile">
+                Kurse Auswählen
+            </button>
+        </div>
+        <button class="sidenav-button">
         Fortbildungen
         </button>
-        <button>
+        <button class="sidenav-button">
             Kurse
         </button>
-        <button>
+        <button class="sidenav-button">
             Weiterbildungen
         </button>
-        <button>
+        <button class="sidenav-button">
             Weitere Leistungen
         </button>
 
@@ -67,9 +73,9 @@ export default {
     <div class="dropdown">
         Fortbildungen
         <div class="dropdown-content">
-            <a href="">Betreuung</a>
-            <a href="">Pflege</a>
-            <a href="">PraxisAnleitung</a>
+            <RouterLink to="/betreuung">Betreuung</RouterLink>
+            <RouterLink to="/Pflege">Pflege</RouterLink>
+            <RouterLink to="/PraxisAnleitung">Praxis Anleitung</RouterLink>
         </div>
     </div>
     
@@ -77,9 +83,9 @@ export default {
     <div class="dropdown">
        Unsere Kurse
         <div class="dropdown-content">
-            <a href="">Führung</a>
-            <a href="">Studierende</a>
-            <a href="">Pflegende</a>
+            <RouterLink to="/Fuehrung">Führung</RouterLink>
+            <RouterLink to="/Studierende">Studierende</RouterLink>
+            <RouterLink to="/Pflegende">Pflegende</RouterLink>
         </div>
     </div>
 
@@ -186,6 +192,18 @@ export default {
     
 }
 
+.elopage-mobile{
+    background-color: #E9A537;
+    font-family: "comfortaa";
+    border-radius: 100px;
+    border: none;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: larger;
+}
+
 :root{
     --background-color: white;
     --primary-color: ;
@@ -215,6 +233,7 @@ export default {
     padding-top: 50px;
     transition: 0.25s;
     width: 0px;
+
 }
 
 .sidenav a{
@@ -227,7 +246,7 @@ export default {
     margin-bottom: 30px;
 }
 
-.sidenav button{
+.sidenav-button{
     width: 100%;
     border: none;
     padding-top: 7%;
@@ -276,11 +295,12 @@ export default {
 }
 
 .elopage{
+    font-family: "comfortaa";
     font-weight: bold;
     float: right;
     border: none;
     border-radius: 100px;
-    background-color: white;
+    background-color: #E9A537;
     color: black;
 }
 
