@@ -1,34 +1,28 @@
 <script setup lang="ts">
-import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <body>
-    
-  <Navbar/>
+  <v-app>
+    <v-app-bar 
+    :elevation="3"
+    class="rounded"
+    style="
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    "
+    >
+    <v-app-bar-title style="color: #211103;" > Tofumi.net </v-app-bar-title>
+    </v-app-bar>
+    <v-main>
   <RouterView/>
-  <Footer/>
+  </v-main>
 
-  </body>
+  </v-app>
 </template>
 
-<style scoped>
+<style>
 
-@font-face {
-  font-family: "open-sans";
-  src: url("./assets/fonts/OpenSans-Regular.woff") format("woff");
-}
 
-html, body{
-  font-family: "open-sans";
-}
-
-body{
-  background-color: #fdfdfd;
-  background-image: url(./assets/Hintergrund_Footer.png);
-  background-size: contain;
-  flex-wrap: wrap;
-  background-repeat: no-repeat;
-}
 </style>
+
