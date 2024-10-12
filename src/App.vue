@@ -12,6 +12,7 @@
     margin-right: 10%;
     "
     >
+    <v-spacer/>
     <v-app-bar-title style="color: #211103;" > Tofumi.net </v-app-bar-title>
     </v-app-bar>
     <v-main>
