@@ -12,8 +12,9 @@
     margin-right: 10%;
     "
     >
-    <v-spacer/>
-    <v-app-bar-title style="color: #211103;"> Tofumi.net </v-app-bar-title>
+    <div style="width: 100%; text-align: center; color: #170a01;">
+        Tofumi.net
+    </div>
     </v-app-bar>
     <v-main>
   <RouterView/>
