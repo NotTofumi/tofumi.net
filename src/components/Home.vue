@@ -3,10 +3,10 @@
 
 <template>
 
-<v-container width="50%" style="overflow-y: scroll;" >
+<v-container width="50%" >
     <v-container class="my2">
     <v-card height="500">
-        <v-card-title>
+        <v-card-title style="color: #211103;">
             About Me!
         </v-card-title>
 
@@ -15,7 +15,7 @@
 
     <v-container class="my2">
     <v-card height="500">
-        <v-card-title>
+        <v-card-title style="color: #211103;">
             My Socials!
         </v-card-title>
     </v-card>
@@ -23,8 +23,8 @@
 
     <v-container class="my2">
     <v-card height="500">
-        <v-card-title>
-            My Keyboards
+        <v-card-title style="color: #211103;">
+            idk keyboards or some shit
         </v-card-title>
     </v-card>
     </v-container>

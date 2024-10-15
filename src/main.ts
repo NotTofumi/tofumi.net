@@ -24,8 +24,8 @@ const router = createRouter({
 
 theme colors:
 
-dark brown: #140d08
-light brown: #c09962
+dark brown: #170a01
+light brown: #bd8f5e
 accent: #829a7d
 
 
@@ -37,8 +37,8 @@ const customDarkTheme : ThemeDefinition = {
     dark: true,
     colors: {
 
-        background: "#140d08",
-        surface:    "#c09962",
+        background: "#170a01",
+        surface:    "#bd8f5e",
         primary:    "#c09962",
 
     }
