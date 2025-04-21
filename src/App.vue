@@ -1,22 +1,30 @@
 <script setup lang="ts">
-import HelloWorld from './components/Home.vue'
-import Navbar from './components/Navbar.vue'
 </script>
 
 <template>
-  <body>
-    
-  <Navbar/>
-  <HelloWorld/>
-  </body>
+  <v-app>
+    <v-app-bar 
+    :elevation="3"
+    class="rounded"
+    style="
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    "
+    >
+    <div style="width: 100%; text-align: center; color: #170a01;">
+        Tofumi.net
+    </div>
+    </v-app-bar>
+    <v-main>
+  <RouterView/>
+  </v-main>
+
+  </v-app>
 </template>
 
-<style scoped>
-body{
-  background-color: #fdfdfd;
-  background-image: url(./assets/Hintergrund.png.png);
-  background-size: contain;
-  flex-wrap: wrap;
-  background-repeat: no-repeat;
-}
+<style>
+
+
 </style>
+
