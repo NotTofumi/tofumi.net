@@ -9,10 +9,11 @@ import * as directives from 'vuetify/directives'
 
 import { createMemoryHistory, createRouter } from 'vue-router'
 
-import Home from './components/Home.vue'
+import ConstructionVue from './components/Construction.vue'
 
 const routes = [
-{ path: "/", component: Home},
+{ path: "/", component: ConstructionVue},
+
 ]
 
 const router = createRouter({
