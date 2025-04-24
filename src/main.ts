@@ -9,10 +9,11 @@ import * as directives from 'vuetify/directives'
 
 import { createMemoryHistory, createRouter } from 'vue-router'
 
-import ConstructionVue from './components/Construction.vue'
+
+import HomeVue from './components/Home.vue'
 
 const routes = [
-{ path: "/", component: ConstructionVue},
+{ path: "/", component: HomeVue},
 
 ]
 
@@ -39,7 +40,7 @@ const customDarkTheme : ThemeDefinition = {
     dark: true,
     colors: {
 
-        background: "#1d1611",
+        background: "#1d161100" ,
         surface:    "#bd8f5e",
         primary:    "#c09962",
 
