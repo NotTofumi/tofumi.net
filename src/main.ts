@@ -9,7 +9,7 @@ import * as directives from 'vuetify/directives'
 
 import { createMemoryHistory, createRouter } from 'vue-router'
 
-
+//test
 import HomeVue from './components/Home.vue'
 
 const routes = [
